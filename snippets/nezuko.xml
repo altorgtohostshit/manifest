@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="nezuko"
+           fetch="https://github.com/NezukoOS" 
+           revision="eleven" />
+
+    <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="eleven"
+          review="gerrit.pixelexperience.org" />
+
+      <remote name="dababy"
+          fetch="https://github.com/altorgtohostshit/"
+          revision="eleven" />
+            
+  <remote  name="fluid"
+           fetch="https://github.com/Project-Fluid" 
+           revision="fluid-11" />
+
+  <remote name="nezuko-devices"
+          fetch="https://github.com/NezukoOS-Devices"
+          revision="eleven" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" remote="nezuko" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="fluid" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" remote="nezuko" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="nezuko" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/nezuko/sepolicy" name="device_nezuko_sepolicy" remote="nezuko" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="nezuko" revision="eleven" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" revision="eleven" remote="nezuko" />
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" revision="eleven-legacy" remote="nezuko" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" revision="eleven-legacy-um" remote="nezuko" />
+
+  <!-- External -->
+  <project path="external/selinux" name="external_selinux" remote="nezuko" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="nezuko" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="nezuko"/>
+  <project path="external/faceunlock" name="external_faceunlock" remote="dababy" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" remote="nezuko" />
+  <project path="frameworks/native" name="frameworks_native" remote="nezuko" />
+  <project path="frameworks/av" name="frameworks_av" remote="nezuko" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="nezuko" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="nezuko" />
+
+  <!-- Hardware -->
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="nezuko" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="nezuko" />
+
+  <!-- Packages -->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="nezuko" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="nezuko" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="nezuko" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="nezuko" />
+  <project path="packages/apps/PermissionController" name="packages_apps_PermissionController" remote="nezuko" />
+  <project path="packages/apps/Styles" name="packages_apps_Styles" remote="nezuko" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="nezuko" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="nezuko" />
+  <project path="packages/apps/MotoSignatureApp" name="NemesisDevelopers/motorola/motorola_motosignatureapp" remote="gitlab" revision="eleven"/>
+  <project path="packages/apps/Themer" name="packages_apps_Themer" remote="nezuko"/>
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="fluid" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="pixel" />
+
+  <project path="packages/apps/Snap" name="packages_apps_Snap" remote="nezuko" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="nezuko" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="nezuko" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="nezuko" />
+  <project path="system/vold" name="system_vold" remote="fluid" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="nezuko" />
+  <project path="system/security" name="system_security" remote="nezuko" />
+  <project path="system/netd" name="system_netd" remote="fluid" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="fluid" />
+
+  <!-- Vendor -->
+  <project path="vendor/nezuko" name="vendor_nezuko" remote="nezuko" />
+  <project path="vendor/nezextras" name="vendor_nezextras" remote="nezuko" />
+  <project path="vendor/support" name="vendor_support" remote="nezuko" />
+</manifest>
