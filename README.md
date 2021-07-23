@@ -25,10 +25,9 @@ $ lunch nezuko_$device-userdebug
 $ mka bacon -jX
 ```
 
-### Flags ###
-<br>
+# Flags #
 
-# Gapps
+### Gapps ###
 By default the ROM builds with GApps, if you wish to do a vanilla build. Set the flag `TARGET_INCLUDE_GAPPS` to false.
 
 Optionally you may also configure `TARGET_INCLUDE_STOCK_ARCORE` and `TARGET_INCLUDE_GOOGLE_RECORDER` according to your device if you ship a gapps build. (These 2 flags default to false.)
@@ -36,4 +35,4 @@ Optionally you may also configure `TARGET_INCLUDE_STOCK_ARCORE` and `TARGET_INCL
 <br>
 
 # Apply for Official # 
-If you would like to apply for official, then feel free to take a look [here](https://github.com/NezukoOS/Docs/blob/main/official_requirements.md).
+If you would like to apply for official, then feel free to take a look [here](https://github.com/NezukoOS/official_devices).
