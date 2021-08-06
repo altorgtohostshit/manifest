@@ -97,6 +97,7 @@
   <project path="system/security" name="system_security" remote="nezuko" />
   <project path="system/netd" name="system_netd" remote="fluid" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="fluid" />
+  <project path="system/update_engine" name="system_update_engine" remote="fluid" />
 
   <!-- Vendor -->
   <project path="vendor/nezuko" name="vendor_nezuko" remote="nezuko" />
