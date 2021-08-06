@@ -58,6 +58,7 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="nezuko" />
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="nezuko"/>
   <project path="external/faceunlock" name="external_faceunlock" remote="dababy" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="nezuko" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="nezuko" />
