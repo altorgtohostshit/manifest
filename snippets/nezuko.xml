@@ -59,6 +59,7 @@
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="nezuko"/>
   <project path="external/faceunlock" name="external_faceunlock" remote="dababy" />
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="nezuko" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="nezuko" />
 
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="nezuko" />

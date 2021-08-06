@@ -60,6 +60,7 @@
   <remove-project name="platform/external/icu" />
   <remove-project name="platform/external/cldr" />
   <remove-project name="platform/external/jemalloc_new" />
+  <remove-project name="platform/external/arm-optimized-routines" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
