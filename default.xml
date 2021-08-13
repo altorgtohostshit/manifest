@@ -837,7 +837,7 @@
   <include name="snippets/remove.xml" />
 
   <!-- Add all NezukoOS repos -->
-  <include name="snippets/nezuko.xml" />
+  <include name="snippets/radiant.xml" />
 
   <!-- Add some LineageOS repos -->
   <include name="snippets/lineage.xml" />

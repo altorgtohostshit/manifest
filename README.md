@@ -1,11 +1,11 @@
-# NezukoOS #
+# Project Radiant #
 
 ### Sync ###
 
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/NezukoOS/manifest -b eleven
+repo init -u https://github.com/ProjectRadiant/manifest -b eleven
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -19,7 +19,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 $ . build/envsetup.sh
 
 # Choose a target
-$ lunch nezuko_$device-userdebug
+$ lunch radiant_$device-userdebug
 
 # Build the code
 $ mka bacon -jX
@@ -35,4 +35,4 @@ Optionally you may also configure `TARGET_INCLUDE_STOCK_ARCORE` and `TARGET_INCL
 <br>
 
 # Apply for Official # 
-If you would like to apply for official, then feel free to take a look [here](https://github.com/NezukoOS/official_devices).
+If you would like to apply for official, then feel free to take a look [here](https://github.com/ProjectRadiant/official_devices).
