@@ -47,7 +47,7 @@
   </project>
 
   <!-- Device -->
-  <project path="device/nezuko/sepolicy" name="device_nezuko_sepolicy" remote="radiant" />
+  <project path="device/radiant/sepolicy" name="device_radiant_sepolicy" remote="radiant" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="radiant" revision="eleven" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" revision="eleven" remote="radiant" />
   <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" revision="eleven-legacy" remote="radiant" />
