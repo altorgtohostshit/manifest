@@ -25,6 +25,11 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
+  <remote name="dot-gitlab"
+          fetch="http://gitlab.com/dotos-official/"
+          review="https://review.droidontime.com/"
+          revision="refs/heads/dot11" />
+
   <!-- Rootdir -->
   <project path="bionic" name="bionic" remote="radiant" />
 
@@ -71,6 +76,7 @@
   <!-- Hardware -->
   <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="radiant" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="radiant" />
+  <project path="prebuilts/sdk" name="android_prebuilts_sdk" remote="dot-gitlab" />
 
   <!-- Packages -->
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="radiant" />
