@@ -19,7 +19,7 @@
            revision="fluid-11" />
 
   <remote name="nezuko-devices"
-          fetch="https://github.com/NezukoOS-Devices"
+          fetch="https://github.com/Radiantdevices"
           revision="eleven" />
 
   <remote  name="gitlab"
